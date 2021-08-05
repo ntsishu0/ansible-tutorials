@@ -1,9 +1,13 @@
 # node01 ansible_ssh_host=142.93.150.117 ansible_ssh_user=root ansible_ssh_private_key_file=~/ansible.pem
 # node02 ansible_ssh_host=206.81.15.120 ansible_ssh_user=root ansible_ssh_private_key_file=~/ansible.pem
 # node01 ansible_ssh_host=147.182.187.13 ansible_ssh_user=root 
-node05 ansible_ssh_host=143.110.218.26 ansible_ssh_user=root 
+node01 ansible_ssh_host=143.110.218.26 ansible_ssh_user=root 
 
-[webserver]
+[webservers]
 node01
-[appserver]
+
+[dbservers]
+node01
+
+[appservers]
 node01
